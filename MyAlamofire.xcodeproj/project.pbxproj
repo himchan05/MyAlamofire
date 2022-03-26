@@ -11,6 +11,10 @@
 		0E88689127EDEA6C00F88341 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88689027EDEA6C00F88341 /* ContentView.swift */; };
 		0E88689327EDEA6F00F88341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E88689227EDEA6F00F88341 /* Assets.xcassets */; };
 		0E88689627EDEA6F00F88341 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E88689527EDEA6F00F88341 /* Preview Assets.xcassets */; };
+		0E88689D27EDEA9600F88341 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88689C27EDEA9600F88341 /* ProfileImageView.swift */; };
+		0E88689F27EDF80D00F88341 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88689E27EDF80D00F88341 /* Model.swift */; };
+		0E8868A127EDFB0300F88341 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8868A027EDFB0300F88341 /* ViewModel.swift */; };
+		E77BE63AA951A1911F4827DD /* Pods_MyAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B612D30E76EE2B0BACF3CB31 /* Pods_MyAlamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,12 @@
 		0E88689027EDEA6C00F88341 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E88689227EDEA6F00F88341 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E88689527EDEA6F00F88341 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0E88689C27EDEA9600F88341 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		0E88689E27EDF80D00F88341 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0E8868A027EDFB0300F88341 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7E41F8C4A45013656512BFED /* Pods-MyAlamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAlamofire.debug.xcconfig"; path = "Target Support Files/Pods-MyAlamofire/Pods-MyAlamofire.debug.xcconfig"; sourceTree = "<group>"; };
+		B612D30E76EE2B0BACF3CB31 /* Pods_MyAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E18327782A6BEC93E2E4A37C /* Pods-MyAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAlamofire.release.xcconfig"; path = "Target Support Files/Pods-MyAlamofire/Pods-MyAlamofire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E77BE63AA951A1911F4827DD /* Pods_MyAlamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +48,8 @@
 			children = (
 				0E88688D27EDEA6C00F88341 /* MyAlamofire */,
 				0E88688C27EDEA6C00F88341 /* Products */,
+				57CC7EBB946ECDA97337DDE6 /* Pods */,
+				14C473F29B6F863F0F9CA3E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +66,9 @@
 			children = (
 				0E88688E27EDEA6C00F88341 /* MyAlamofireApp.swift */,
 				0E88689027EDEA6C00F88341 /* ContentView.swift */,
+				0E88689E27EDF80D00F88341 /* Model.swift */,
+				0E8868A027EDFB0300F88341 /* ViewModel.swift */,
+				0E88689C27EDEA9600F88341 /* ProfileImageView.swift */,
 				0E88689227EDEA6F00F88341 /* Assets.xcassets */,
 				0E88689427EDEA6F00F88341 /* Preview Content */,
 			);
@@ -67,6 +83,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		14C473F29B6F863F0F9CA3E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B612D30E76EE2B0BACF3CB31 /* Pods_MyAlamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57CC7EBB946ECDA97337DDE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E41F8C4A45013656512BFED /* Pods-MyAlamofire.debug.xcconfig */,
+				E18327782A6BEC93E2E4A37C /* Pods-MyAlamofire.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E88689927EDEA6F00F88341 /* Build configuration list for PBXNativeTarget "MyAlamofire" */;
 			buildPhases = (
+				255D334DB81123E46574977A /* [CP] Check Pods Manifest.lock */,
 				0E88688727EDEA6C00F88341 /* Sources */,
 				0E88688827EDEA6C00F88341 /* Frameworks */,
 				0E88688927EDEA6C00F88341 /* Resources */,
+				63CF39EF741FFC95D2BDE04C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +167,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		255D334DB81123E46574977A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyAlamofire-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63CF39EF741FFC95D2BDE04C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyAlamofire/Pods-MyAlamofire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyAlamofire/Pods-MyAlamofire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyAlamofire/Pods-MyAlamofire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0E88688727EDEA6C00F88341 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8868A127EDFB0300F88341 /* ViewModel.swift in Sources */,
+				0E88689D27EDEA9600F88341 /* ProfileImageView.swift in Sources */,
 				0E88689127EDEA6C00F88341 /* ContentView.swift in Sources */,
 				0E88688F27EDEA6C00F88341 /* MyAlamofireApp.swift in Sources */,
+				0E88689F27EDF80D00F88341 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +343,7 @@
 		};
 		0E88689A27EDEA6F00F88341 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E41F8C4A45013656512BFED /* Pods-MyAlamofire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +373,7 @@
 		};
 		0E88689B27EDEA6F00F88341 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18327782A6BEC93E2E4A37C /* Pods-MyAlamofire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

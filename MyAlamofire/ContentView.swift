@@ -6,11 +6,20 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
+    @ObservedObject var randomusers = ViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text(" \(randomusers.viewmodel.count) 명의 랜덤 프로필")
+            ScrollView {
+                ForEach(randomusers.viewmodel, id: \.self) { user in
+                    ProfileImageView(Item: user)
+                }
+            }
+        }
     }
 }
 
